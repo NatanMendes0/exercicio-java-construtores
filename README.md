@@ -1,4 +1,8 @@
-# Desafio do curso da Alura - Trabalhando com Listas e Coleções de Dados 
+# Desafio do curso da Alura
+<h3>
+   Trabalhando com Listas e Coleções de Dados.
+</h3>
+
 Nesse desafio, lido com Construtores e Herança em Java
 
 Este repositório contém o código-fonte para o desafio proposto na aula sobre construtores e herança em Java. O objetivo é praticar a criação de classes, construtores e herança, utilizando a classe `Produto` como base.
@@ -15,11 +19,11 @@ O desafio consiste em:
    - Recuperar um produto pelo índice.
    - Implementar o método `toString()` para retornar uma representação em texto do objeto.
    - Imprimir a lista de produtos utilizando `System.out.println()`.
-     <br/>
+   </br>
 2. **Criar um construtor para a classe `Produto`:**
    - O construtor deve receber parâmetros para inicializar os atributos.
    - Criar objetos `Produto` utilizando o novo construtor.
-   <br/>
+   </br>
 3. **Criar a classe `ProdutoPerecivel`:**
    - Herda da classe `Produto`.
    - Atributo: `dataValidade`.
