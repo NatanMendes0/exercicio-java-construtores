@@ -1,60 +1,39 @@
-# Exercício: Resolução sobre Construtores
+# Desafio do curso da Alura - Trabalhando com Listas e Coleções de Dados 
+Nesse desafio, lido com Construtores e Herança em Java
 
-## Introdução
-Para reforçar a compreensão sobre construtores, propomos um exercício prático que irá aprofundar seus conhecimentos fundamentais. A atividade consiste em criar classes em Java, utilizando construtores e herança. 
+Este repositório contém o código-fonte para o desafio proposto na aula sobre construtores e herança em Java. O objetivo é praticar a criação de classes, construtores e herança, utilizando a classe `Produto` como base.
 
-Pronto para mergulhar nesse aprendizado prático?
+## Descrição do Desafio
 
-## Descrição do Exercício
-O exercício é dividido em várias etapas:
+O desafio consiste em:
 
-1. **Criação da Classe `Produto`**:
-    - Crie uma classe `Produto` com os seguintes atributos:
-        - `nome` (String)
-        - `preco` (double)
-        - `quantidade` (int)
-    - Implemente o método `toString()` na classe `Produto` para retornar uma representação em texto do objeto.
+1. **Criar a classe `Produto`:**
+   - Atributos: `nome`, `preco` e `quantidade`.
+   - Criar uma lista de objetos `Produto` utilizando `ArrayList`.
+   - Adicionar alguns produtos à lista.
+   - Imprimir o tamanho da lista.
+   - Recuperar um produto pelo índice.
+   - Implementar o método `toString()` para retornar uma representação em texto do objeto.
+   - Imprimir a lista de produtos utilizando `System.out.println()`.
+     <br/>
+2. **Criar um construtor para a classe `Produto`:**
+   - O construtor deve receber parâmetros para inicializar os atributos.
+   - Criar objetos `Produto` utilizando o novo construtor.
+   <br/>
+3. **Criar a classe `ProdutoPerecivel`:**
+   - Herda da classe `Produto`.
+   - Atributo: `dataValidade`.
+   - Construtor que utiliza o construtor da classe mãe (`super`) para inicializar os atributos herdados.
+   - Criar um objeto `ProdutoPerecivel` e imprimir seus valores.
 
-2. **Utilização da Classe `ArrayList`**:
-    - Crie uma lista de objetos `Produto` utilizando a classe `ArrayList`.
-    - Adicione alguns produtos à lista.
-    - Imprima o tamanho da lista.
-    - Recupere um produto pelo índice e imprima seus detalhes.
+## Como Executar o Código
 
-3. **Modificação da Classe `Produto`**:
-    - Adicione um construtor à classe `Produto` que aceite parâmetros para inicializar os atributos.
-    - Crie objetos `Produto` utilizando esse novo construtor.
+1. Clone este repositório.
+2. Compile o código utilizando o comando `javac *.java`.
+3. Execute o código utilizando o comando `java Main`.
 
-4. **Criação da Classe `ProdutoPerecivel`**:
-    - Crie uma classe `ProdutoPerecivel` que herde de `Produto`.
-    - Adicione um atributo `dataValidade` (String) à classe `ProdutoPerecivel`.
-    - Crie um construtor que utilize o construtor da classe mãe (`super`) para inicializar os atributos herdados.
-    - Crie um objeto `ProdutoPerecivel` e imprima seus valores.
+## Arquivos
 
-## Solução
-
-### Passo 1: Classe `Produto`
-
-```java
-public class Produto {
-    private String nome;
-    private double preco;
-    private int quantidade;
-
-    public Produto(String nome, double preco, int quantidade) {
-        this.nome = nome;
-        this.preco = preco;
-        this.quantidade = quantidade;
-    }
-
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "nome='" + nome + '\'' +
-                ", preco=" + preco +
-                ", quantidade=" + quantidade +
-                '}';
-    }
-
-    // Getters e Setters podem ser adicionados aqui
-}
+- `Produto.java`: Classe `Produto` com seus atributos, métodos e construtor.
+- `ProdutoPerecivel.java`: Classe `ProdutoPerecivel` que herda de `Produto`.
+- `Main.java`: Classe principal que contém o código para testar as classes `Produto` e `ProdutoPerecivel`.
