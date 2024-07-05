@@ -17,10 +17,9 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "{" +
-                "nome = '" + nome + '\'' +
-                ", quantidade = " + quantidade +
-                ", preco = R$" + preco +
-                "}";
+        return "nome = '" + nome + '\'' +
+                " | quantidade = " + quantidade +
+                " | preco = R$" + preco +
+                " | ";
     }
 }

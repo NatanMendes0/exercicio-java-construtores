@@ -3,7 +3,6 @@ package br.com.alura;
 import br.com.alura.modelos.Produto;
 import br.com.alura.modelos.ProdutoPerecivel;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
 public class Principal {
@@ -20,7 +19,7 @@ public class Principal {
         listaDeProdutos.add(produto3);
 
         //exercício 1
-        System.out.println("\nExercício 1:\n O tamanho da lista de produtos é: " + listaDeProdutos.size());
+        System.out.println("\nExercício 1:\nO tamanho da lista de produtos é: " + listaDeProdutos.size());
         for (int i = 0; i < listaDeProdutos.size(); i++) {
             System.out.println("O item da lista de produtos da "+(i+1)+"ª posição é: "+listaDeProdutos.get(i).getNome());
         }

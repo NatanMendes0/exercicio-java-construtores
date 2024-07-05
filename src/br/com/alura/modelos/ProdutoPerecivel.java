@@ -14,6 +14,6 @@ public class ProdutoPerecivel extends Produto{
 
     @Override
     public String toString() {
-        return super.toString() + getDataValidade();
+        return super.toString() + "Data de Validado do Produto: " + getDataValidade();
     }
 }
